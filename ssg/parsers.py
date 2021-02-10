@@ -19,3 +19,6 @@ class Parser:
         full_path = dest / path.with_suffix(ext).name
         with open(full_path, "w") as file:
             file.write(content)
+
+    def copy(self, path, source, dest):
+        shutil.copy2(path, dest / relative_to(source))
