@@ -27,6 +27,4 @@ class ResourceParser(Parser):
     extensions = [".jpg", ".png", ".gif", ".css", ".html"]
 
     def parse(self, path: Path, source: Path, dest: Path):
-        raise NotImplementedError
-
-    Parser.copy(self, path, source, dest)
+        self.copy(path, source, dest)
