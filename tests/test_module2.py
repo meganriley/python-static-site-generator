@@ -512,7 +512,7 @@ def test_site_load_parser_module2(parse):
 
     self_arg = site.get_by_value("def_argument", "self", load_parser.code)
     assert self_arg.exists, "Does the `load_parser` method have a `self` argument?"
-'''
+
     extension_arg = site.get_by_value("def_argument", "extension", load_parser.code)
     assert (
         extension_arg.exists
@@ -541,7 +541,7 @@ def test_site_load_parser_module2(parse):
 
     return_exists = for_loop.if_.return_.name.value == "parser"
     assert return_exists, "Are you returning `parser` in the `if`?"
-
+'''
 
 @pytest.mark.test_site_run_parser_module2
 def test_site_run_parser_module2(parse):
