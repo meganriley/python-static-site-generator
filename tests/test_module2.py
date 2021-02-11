@@ -341,7 +341,7 @@ def test_parser_copy_function_module2(parse):
         )
         is not None
     )
-'''
+
     correct_path = (
         copy2_call.binary_operator.value == "/"
         and copy2_call.binary_operator.first.value == "dest"
@@ -447,7 +447,7 @@ def test_site_parsers_module2(parse):
 
     parsers_arg = site.get_by_value("def_argument", "parsers", init_def.code)
     assert parsers_arg.exists, "Does the `__init__` method have a `parsers` argument?"
-
+'''
     default_value = parsers_arg.code.value.name.value == "None"
     assert default_value, "Is the `parsers` argument set to `None`?"
 
