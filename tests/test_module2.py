@@ -447,7 +447,7 @@ def test_site_parsers_module2(parse):
 
     parsers_arg = site.get_by_value("def_argument", "parsers", init_def.code)
     assert parsers_arg.exists, "Does the `__init__` method have a `parsers` argument?"
-'''
+
     default_value = parsers_arg.code.value.name.value == "None"
     assert default_value, "Is the `parsers` argument set to `None`?"
 
@@ -490,7 +490,7 @@ def test_ssg_config_parser_module2(parse):
         rp_kv
     ), "Does the `config` dictionary have a `parsers` key with an array with a single value of `ssg.parsers.ResourceParser()`?"
 
-
+'''
 @pytest.mark.test_site_load_parser_module2
 def test_site_load_parser_module2(parse):
     # def load_parser(self, extension):
