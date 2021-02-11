@@ -541,7 +541,7 @@ def test_site_load_parser_module2(parse):
 
     return_exists = for_loop.if_.return_.name.value == "parser"
     assert return_exists, "Are you returning `parser` in the `if`?"
-'''
+
 
 @pytest.mark.test_site_run_parser_module2
 def test_site_run_parser_module2(parse):
@@ -616,7 +616,7 @@ def test_site_run_parser_if_module2(parse):
     assert (
         test_correct
     ), "Do you have an `if` statement that tests whether `parser` is not `None`?"
-
+'''
     parse_call = parser_if.find(
         "atomtrailers",
         lambda node: node[0].value == "parser"
