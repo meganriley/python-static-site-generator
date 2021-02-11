@@ -341,7 +341,7 @@ def test_parser_copy_function_module2(parse):
         )
         is not None
     )
-
+'''
     correct_path = (
         copy2_call.binary_operator.value == "/"
         and copy2_call.binary_operator.first.value == "dest"
@@ -694,3 +694,4 @@ def test_site_build_elif_module2(parse):
         is not None
     )
     assert run_parser_call, "Are you calling self.run_parser() in the `elif`?"
+'''
