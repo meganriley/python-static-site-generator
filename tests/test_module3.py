@@ -443,7 +443,7 @@ def test_content_iter_module3(parse):
 
     assert iter_call, "Are you calling `__iter__()` on `self.data`?"
 
-'''
+
 @pytest.mark.test_content_len_module3
 def test_content_len_module3(parse):
     # def __len__(self):
@@ -472,7 +472,7 @@ def test_content_len_module3(parse):
         len_correct
     ), "Are you returning a call to `len()` and passing the correct argument?"
 
-
+'''
 @pytest.mark.test_content_repr_module3
 def test_content_repr_module3(parse):
     # def __repr__(self):
