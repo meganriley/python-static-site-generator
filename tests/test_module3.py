@@ -47,7 +47,7 @@ def test_content_class_module3(parse):
     assert (
         delimiter.exists
     ), "Have you created a variable called `__delimiter` and assigned it a regular expression pattern?"
-'''
+
     delimiter_correct = (
         delimiter.code.value.value.replace("'", '"') == 'r"^(?:-|\\+){3}\\s*$"'
     )
@@ -80,7 +80,7 @@ def test_content_class_module3(parse):
     assert (
         args_correct
     ), "Are you passing the correct number of arguments to `re.compile()`?"
-
+'''
 
 @pytest.mark.test_content_classmethod_load_module3
 def test_content_classmethod_load_module3(parse):
