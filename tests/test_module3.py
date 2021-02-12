@@ -80,7 +80,7 @@ def test_content_class_module3(parse):
     assert (
         args_correct
     ), "Are you passing the correct number of arguments to `re.compile()`?"
-'''
+
 
 @pytest.mark.test_content_classmethod_load_module3
 def test_content_classmethod_load_module3(parse):
@@ -129,7 +129,7 @@ def test_content_classmethod_load_module3(parse):
     assert (
         tuple_return_exists
     ), "Are you assigning a tuple the results of a call `to cls.__regex.split()`?"
-
+'''
     split_call = (
         tuple_return.find(
             "atomtrailers",
