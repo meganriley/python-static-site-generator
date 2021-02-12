@@ -407,7 +407,7 @@ def test_content_getitem_module3(parse):
 
     assert getitem_return, "Are you returning `self.data[key]` from `__getitem__`?"
 
-'''
+
 @pytest.mark.test_content_iter_module3
 def test_content_iter_module3(parse):
     # def __iter__(self):
@@ -443,7 +443,7 @@ def test_content_iter_module3(parse):
 
     assert iter_call, "Are you calling `__iter__()` on `self.data`?"
 
-
+'''
 @pytest.mark.test_content_len_module3
 def test_content_len_module3(parse):
     # def __len__(self):
