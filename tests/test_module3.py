@@ -203,7 +203,7 @@ def test_content_init_module3(parse):
 
     self_arg = content.get_by_value("def_argument", "self", init_def.code)
     assert self_arg.exists, "Does the `__init__` method have a `self` argument?"
-'''
+
     metadata_arg = content.get_by_value("def_argument", "metadata", init_def.code)
     assert metadata_arg.exists, "Does the `__init__` method have a `metadata` argument?"
 

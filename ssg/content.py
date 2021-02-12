@@ -14,5 +14,4 @@ class Content(Mapping):
        metadata = load(fm, Loader=FullLoader)
        return cls(metadata, content)
 
-    def __init__(self, metadata, content):
-        pass
+    
