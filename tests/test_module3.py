@@ -368,7 +368,7 @@ def test_content_type_setter_module3(parse):
         self_content_exists and self_content.value.value == "type"
     ), 'Are you assigning `self.data["type"]` correctly?'
 
-'''
+
 @pytest.mark.test_content_getitem_module3
 def test_content_getitem_module3(parse):
     # def __getitem__(self, key):
@@ -407,7 +407,7 @@ def test_content_getitem_module3(parse):
 
     assert getitem_return, "Are you returning `self.data[key]` from `__getitem__`?"
 
-
+'''
 @pytest.mark.test_content_iter_module3
 def test_content_iter_module3(parse):
     # def __iter__(self):
