@@ -15,4 +15,4 @@ class Content(Mapping):
        return cls(metadata, content)
 
     def __init__(self, metadata, content):
-        self.data = metadata
+        pass
