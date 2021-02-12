@@ -616,7 +616,7 @@ def test_site_run_parser_if_module2(parse):
     assert (
         test_correct
     ), "Do you have an `if` statement that tests whether `parser` is not `None`?"
-'''
+
     parse_call = parser_if.find(
         "atomtrailers",
         lambda node: node[0].value == "parser"
@@ -648,7 +648,7 @@ def test_site_run_parser_if_module2(parse):
         else_print or error_call_exists
     ), "Have you added an `else` statement to the `if` that prints the correct message?"
 
-
+'''
 @pytest.mark.test_site_build_elif_module2
 def test_site_build_elif_module2(parse):
     # elif path.is_file():
