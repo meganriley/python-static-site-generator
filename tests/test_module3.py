@@ -182,7 +182,7 @@ def test_content_classmethod_load_module3(parse):
     )
     assert cls_args_correct, "Are you passing the correct arguments to `cls()`?"
 
-'''
+
 @pytest.mark.test_content_init_module3
 def test_content_init_module3(parse):
     # def __init__(self, metadata, content):
@@ -203,7 +203,7 @@ def test_content_init_module3(parse):
 
     self_arg = content.get_by_value("def_argument", "self", init_def.code)
     assert self_arg.exists, "Does the `__init__` method have a `self` argument?"
-
+'''
     metadata_arg = content.get_by_value("def_argument", "metadata", init_def.code)
     assert metadata_arg.exists, "Does the `__init__` method have a `metadata` argument?"
 
@@ -213,7 +213,7 @@ def test_content_init_module3(parse):
     self_data = content.get_by_value("assignment", "self.data", init_def.code)
     self_data_exists = self_data.exists and self_data.code.value.value == "metadata"
     assert self_data_exists, "Are you assigning `self.data` correctly?"
-
+'''
     self_content = init_def.code.find(
         "assignment",
         lambda node: node.find(
