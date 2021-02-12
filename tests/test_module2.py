@@ -648,7 +648,7 @@ def test_site_run_parser_if_module2(parse):
         else_print or error_call_exists
     ), "Have you added an `else` statement to the `if` that prints the correct message?"
 
-'''
+
 @pytest.mark.test_site_build_elif_module2
 def test_site_build_elif_module2(parse):
     # elif path.is_file():
@@ -694,4 +694,3 @@ def test_site_build_elif_module2(parse):
         is not None
     )
     assert run_parser_call, "Are you calling self.run_parser() in the `elif`?"
-'''
