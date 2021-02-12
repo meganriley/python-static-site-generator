@@ -269,7 +269,7 @@ def test_content_body_property_module3(parse):
 
     assert body_return, 'Are you returning `self.data["content"]` from `body`?'
 
-'''
+
 @pytest.mark.test_content_type_property_module3
 def test_content_type_property_module3(parse):
     # @property
@@ -368,7 +368,7 @@ def test_content_type_setter_module3(parse):
         self_content_exists and self_content.value.value == "type"
     ), 'Are you assigning `self.data["type"]` correctly?'
 
-
+'''
 @pytest.mark.test_content_getitem_module3
 def test_content_getitem_module3(parse):
     # def __getitem__(self, key):
