@@ -23,7 +23,7 @@ def test_content_imports_module3(parse):
 
     yaml_imports = yaml_load and yaml_full
     assert collections_import, "Have you imported `load` and `FullLoader` from `yaml`?"
-'''
+
 
 @pytest.mark.test_content_class_module3
 def test_content_class_module3(parse):
@@ -47,7 +47,7 @@ def test_content_class_module3(parse):
     assert (
         delimiter.exists
     ), "Have you created a variable called `__delimiter` and assigned it a regular expression pattern?"
-
+'''
     delimiter_correct = (
         delimiter.code.value.value.replace("'", '"') == 'r"^(?:-|\\+){3}\\s*$"'
     )
