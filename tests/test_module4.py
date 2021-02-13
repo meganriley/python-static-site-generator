@@ -119,7 +119,7 @@ def test_parser_markdown_parse_module4(parse):
     )
     assert load_arg, "Are you passing a call of `self.read(path)` to `Content.load()`?"
 
-'''
+
 @pytest.mark.test_parser_markdown_parse_write_html_module4
 def test_parser_markdown_parse_write_html_module4(parse):
     # html = markdown(content.body)
@@ -199,7 +199,7 @@ def test_parser_markdown_parse_write_html_module4(parse):
     ]
     assert write_message, "Are you writing the correct message to the console?"
 
-
+'''
 @pytest.mark.test_parser_restructuredtext_class_module4
 def test_parser_restructuredtext_class_module4(parse):
     # class ReStructuredTextParser(Parser):
