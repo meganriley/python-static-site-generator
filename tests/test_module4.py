@@ -326,7 +326,7 @@ def test_parser_restructuredtext_parse_write_html_module4(parse):
     write_call = parsers.get_call("write", parse.code)
     write_call_exists = write_call.exists and write_call.code.parent[0].value == "self"
     assert write_call_exists, "Are you calling `self.write()`?"
-'''
+
     write_args = parsers.get_args(write_call.code)
     write_args_correct = (
         len(write_args) == 3
@@ -358,7 +358,7 @@ def test_parser_restructuredtext_parse_write_html_module4(parse):
         'content'
     ]
     assert write_message, "Are you writing the correct message to the console?"
-
+'''
 @pytest.mark.test_ssg_parsers_array_module4
 def test_ssg_parsers_array_module4(parse):
 

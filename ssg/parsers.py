@@ -49,3 +49,5 @@ class ReStructuredTextParser(Parser):
 
     def parse(self, path, source, dest):
         content = Content.load(self.read(path))
+        html = publish_parts(content.body, writer_name="html5")
+        self.write(path, dest, html["html_body"])
