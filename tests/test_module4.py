@@ -397,7 +397,7 @@ def test_site_staticmethod_module4(parse):
 
     sys_import = "sys" in site.get_imports()
     assert sys_import, "Are you importing `sys`?"
-'''
+
     site_class = site.get_by_name("class", "Site")
 
     assert (
@@ -470,4 +470,3 @@ def test_site_error_call_module4(parse):
     ]
 
     assert error_message, "Are you passing in the correct error message?"
-'''
