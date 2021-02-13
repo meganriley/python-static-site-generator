@@ -212,7 +212,7 @@ def test_parser_restructuredtext_class_module4(parse):
     assert (
         rst_parser_class.exists
     ), "Have you created a class called `ReStructuredTextParser` in the `parsers.py` file?"
-'''
+
     inheriting = rst_parser_class.code.inherit_from.name.value == "Parser"
     assert inheriting, "Is `ReStructuredTextParser` a sub-class of the `Parser` class?"
 
@@ -326,7 +326,7 @@ def test_parser_restructuredtext_parse_write_html_module4(parse):
     write_call = parsers.get_call("write", parse.code)
     write_call_exists = write_call.exists and write_call.code.parent[0].value == "self"
     assert write_call_exists, "Are you calling `self.write()`?"
-
+'''
     write_args = parsers.get_args(write_call.code)
     write_args_correct = (
         len(write_args) == 3
