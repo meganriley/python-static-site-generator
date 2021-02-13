@@ -472,7 +472,7 @@ def test_content_len_module3(parse):
         len_correct
     ), "Are you returning a call to `len()` and passing the correct argument?"
 
-'''
+
 @pytest.mark.test_content_repr_module3
 def test_content_repr_module3(parse):
     # def __repr__(self):
@@ -572,4 +572,3 @@ def test_content_repr_for_loop_module3(parse):
     )
 
     assert data_key, "Are you assigning `data[key]` `value`?"
-'''
