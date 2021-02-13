@@ -119,7 +119,7 @@ def test_parser_markdown_parse_module4(parse):
     )
     assert load_arg, "Are you passing a call of `self.read(path)` to `Content.load()`?"
 
-
+'''
 @pytest.mark.test_parser_markdown_parse_write_html_module4
 def test_parser_markdown_parse_write_html_module4(parse):
     # html = markdown(content.body)
@@ -470,3 +470,4 @@ def test_site_error_call_module4(parse):
     ]
 
     assert error_message, "Are you passing in the correct error message?"
+'''
