@@ -199,7 +199,7 @@ def test_parser_markdown_parse_write_html_module4(parse):
     ]
     assert write_message, "Are you writing the correct message to the console?"
 
-'''
+
 @pytest.mark.test_parser_restructuredtext_class_module4
 def test_parser_restructuredtext_class_module4(parse):
     # class ReStructuredTextParser(Parser):
@@ -212,7 +212,7 @@ def test_parser_restructuredtext_class_module4(parse):
     assert (
         rst_parser_class.exists
     ), "Have you created a class called `ReStructuredTextParser` in the `parsers.py` file?"
-
+'''
     inheriting = rst_parser_class.code.inherit_from.name.value == "Parser"
     assert inheriting, "Is `ReStructuredTextParser` a sub-class of the `Parser` class?"
 
