@@ -358,7 +358,7 @@ def test_parser_restructuredtext_parse_write_html_module4(parse):
         'content'
     ]
     assert write_message, "Are you writing the correct message to the console?"
-'''
+
 @pytest.mark.test_ssg_parsers_array_module4
 def test_ssg_parsers_array_module4(parse):
 
@@ -397,7 +397,7 @@ def test_site_staticmethod_module4(parse):
 
     sys_import = "sys" in site.get_imports()
     assert sys_import, "Are you importing `sys`?"
-
+'''
     site_class = site.get_by_name("class", "Site")
 
     assert (
